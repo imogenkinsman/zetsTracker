@@ -3,7 +3,7 @@ defmodule ZetsTracker.Repo.Migrations.AddEditTokenToOpenGames do
 
   def change do
     alter table(:open_games) do
-      add :edit_token, :string
+      add :edit_token, :string, null: false
     end
   end
 end

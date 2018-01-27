@@ -50,6 +50,8 @@ defmodule ZetsTracker.Trackers do
 
   """
   def create_open_game(attrs \\ %{}) do
+    attrs = Map.put(attrs, :edit_token, generate_token())
+
     %OpenGame{}
     |> OpenGame.changeset(attrs)
     |> Repo.insert()
@@ -100,5 +102,10 @@ defmodule ZetsTracker.Trackers do
   """
   def change_open_game(%OpenGame{} = open_game) do
     OpenGame.changeset(open_game, %{})
+  end
+
+  defp generate_token do
+    token_length = 25
+    token = :crypto.strong_rand_bytes(token_length) |> Base.url_encode64 |> binary_part(0, token_length)
   end
 end
