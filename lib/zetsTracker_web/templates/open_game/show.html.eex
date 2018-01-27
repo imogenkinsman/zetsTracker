@@ -1,0 +1,8 @@
+<h2>Show Open game</h2>
+
+<ul>
+
+</ul>
+
+<span><%= link "Edit", to: open_game_path(@conn, :edit, @open_game) %></span>
+<span><%= link "Back", to: open_game_path(@conn, :index) %></span>

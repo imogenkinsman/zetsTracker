@@ -1,0 +1,5 @@
+<h2>Edit Open game</h2>
+
+<%= render "form.html", Map.put(assigns, :action, open_game_path(@conn, :update, @open_game)) %>
+
+<span><%= link "Back", to: open_game_path(@conn, :index) %></span>

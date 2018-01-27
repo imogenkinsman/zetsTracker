@@ -16,7 +16,8 @@ defmodule ZetsTrackerWeb.Router do
   scope "/", ZetsTrackerWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", OpenGameController, :new
+    resources "/games", OpenGameController, only: [:create, :show]
   end
 
   # Other scopes may use custom stacks.
