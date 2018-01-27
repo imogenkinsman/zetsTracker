@@ -14,8 +14,8 @@ defmodule ZetsTrackerWeb.OpenGameController do
     render(conn, "new.html", changeset: changeset)
   end
 
-  def create(conn, %{"open_game" => open_game_params}) do
-    case Trackers.create_open_game(open_game_params) do
+  def create(conn, _params) do
+    case Trackers.create_open_game(%{}) do
       {:ok, open_game} ->
         conn
         |> put_flash(:info, "Open game created successfully.")

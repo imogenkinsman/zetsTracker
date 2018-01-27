@@ -1,8 +1,9 @@
-<h2>Show Open game</h2>
+<div class="row">
+  <img src="/images/firerod.png" onclick="activate(this)" ></img>
+</div>
 
-<ul>
-
-</ul>
-
-<span><%= link "Edit", to: open_game_path(@conn, :edit, @open_game) %></span>
-<span><%= link "Back", to: open_game_path(@conn, :index) %></span>
+<script>
+function activate(image) {
+  image.classList.add("active")
+}
+</script>
