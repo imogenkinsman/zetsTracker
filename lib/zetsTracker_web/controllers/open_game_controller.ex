@@ -18,7 +18,6 @@ defmodule ZetsTrackerWeb.OpenGameController do
     case Trackers.create_open_game(%{}) do
       {:ok, open_game} ->
         conn
-        |> put_flash(:info, "Open game created successfully.")
         |> redirect(to: open_game_path(conn, :show, open_game))
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "new.html", changeset: changeset)

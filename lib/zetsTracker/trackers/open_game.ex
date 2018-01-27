@@ -5,6 +5,7 @@ defmodule ZetsTracker.Trackers.OpenGame do
 
 
   schema "open_games" do
+    field :edit_token, :string
 
     timestamps()
   end
