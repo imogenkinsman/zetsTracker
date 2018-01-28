@@ -14,4 +14,6 @@
 function activate(image) {
   image.classList.add("active")
 }
+
+
 </script>

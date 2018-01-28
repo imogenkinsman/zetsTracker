@@ -1,8 +1,10 @@
-defmodule ZetsTrackerWeb.UserSocket do
+defmodule ZetsTrackerWeb.GameSocket do
   use Phoenix.Socket
 
+  @one_day 60 * 60 * 24
+
   ## Channels
-  # channel "room:*", ZetsTrackerWeb.RoomChannel
+  channel "game:*", ZetsTrackerWeb.GameChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
@@ -19,7 +21,18 @@ defmodule ZetsTrackerWeb.UserSocket do
   #
   # See `Phoenix.Token` documentation for examples in
   # performing token verification on connect.
-  def connect(_params, socket) do
+  def connect(%{"token" => token}, socket) do
+    salt = Application.get_env(:zetsTracker, :signing_salt)
+    case Phoenix.Token.verify(socket, salt, token, max_age: @one_day) do
+      {:ok, "auth"} ->
+        {:ok, socket}
+      {:ok, "unauth"} ->
+        {:ok, socket}
+      {:error, _} ->
+        :error
+      _ ->
+        :error
+    end
     {:ok, socket}
   end
 
