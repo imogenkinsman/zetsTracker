@@ -24,9 +24,23 @@ defmodule ZetsTrackerWeb.OpenGameController do
     end
   end
 
+  def show(conn, %{"id" => id, "token" => token}) do
+    open_game = Trackers.get_open_game!(id)
+    salt = Application.get_env(:zetsTracker, :signing_salt)
+    signed_token = if open_game.edit_token == token do
+      Phoenix.Token.sign(ZetsTrackerWeb.Endpoint, salt, "auth")
+    else
+      Phoenix.Token.sign(ZetsTrackerWeb.Endpoint, salt, "unauth")
+    end
+    render(conn, "show.html", open_game: open_game, signed_token: signed_token)
+  end
+
   def show(conn, %{"id" => id}) do
     open_game = Trackers.get_open_game!(id)
-    render(conn, "show.html", open_game: open_game)
+    salt = Application.get_env(:zetsTracker, :signing_salt)
+    signed_token = Phoenix.Token.sign(ZetsTrackerWeb.Endpoint, salt, "unauth")
+    IO.inspect(open_game.edit_token)
+    render(conn, "show.html", open_game: open_game, signed_token: signed_token)
   end
 
   def edit(conn, %{"id" => id}) do

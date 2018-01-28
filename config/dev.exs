@@ -56,3 +56,5 @@ config :zetsTracker, ZetsTracker.Repo,
   database: "zetstracker_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :zetsTracker, :signing_salt, "abc123"

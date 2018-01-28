@@ -12,3 +12,11 @@ THINGS TO DO:
 - authentication for user (not necessary for initial MVP)
   - start out with a basic session-based auth
   - eventually add full user registration (over OAuth for simplicity)
+
+ummm what are we working on today ><
+- let's build out our basic param-based token authentication!
+
+token authentication:
+- the game "token" (really just a 20 char string) is identical for all users. If a user passes it as a GET param to the show page, embed a signed phoenix token into the page, which is used by the JS client to connect to an EDIT channel
+- all users can freely connect to a non-verified ws channel, and receive updates from editors
+- all updates are sent to both channels, but non-verified is unidirectional, and each user is only added to one channel at a time

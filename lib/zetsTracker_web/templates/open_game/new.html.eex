@@ -1,3 +1,3 @@
 <%= form_for @changeset, open_game_path(@conn, :create), fn f -> %>
-  <%= submit "New Open Tracker" %>
+  <%= f.submit "New Open Tracker" %>
 <% end %>

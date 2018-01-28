@@ -1,3 +1,11 @@
+<%= tag :meta, name: "channel_token", content: @signed_token %>
+
+<div class="row">
+  <span>Your edit url is:</span>
+  <%= ZetsTrackerWeb.Router.Helpers.open_game_url(ZetsTrackerWeb.Endpoint, :show, @open_game.id, token: @open_game.edit_token)%>
+</div>
+
+<br/>
 <div class="row">
   <img src="/images/firerod.png" onclick="activate(this)" ></img>
 </div>

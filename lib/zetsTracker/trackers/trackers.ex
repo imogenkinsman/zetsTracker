@@ -105,7 +105,7 @@ defmodule ZetsTracker.Trackers do
   end
 
   defp generate_token do
-    token_length = 25
-    token = :crypto.strong_rand_bytes(token_length) |> Base.url_encode64 |> binary_part(0, token_length)
+    token_length = 20
+    :crypto.strong_rand_bytes(token_length) |> Base.url_encode64 |> binary_part(0, token_length)
   end
 end
