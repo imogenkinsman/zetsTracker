@@ -1,6 +1,12 @@
 # ZetsTracker
 
-To start your Phoenix server:
+ZetsTracker is an item tracker for the [Zelda: Link to the Past Randomizer](vt.alttp.run/randomizer). Its main distinction from other trackers is that it has real-time collaborative updates, allowing streamers of the game to focus on playing and outsource the work to viewers who they trust.
+
+## Contributing
+
+This is currently pre-alpha, but once the featureset is complete, open beta will begin. At that time, suggestions or bug reports are welcome here as issues.
+
+For running the tracker locally:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
@@ -8,13 +14,3 @@ To start your Phoenix server:
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
