@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 class Item extends React.Component {
   constructor(props) {
@@ -12,6 +13,11 @@ class Item extends React.Component {
       <img src={`/images/${name}.png`}></img>
     )
   }
+}
+
+Item.propTypes = {
+  name: PropTypes.string,
+  clickHandler: PropTypes.func
 }
 
 export default Item;
