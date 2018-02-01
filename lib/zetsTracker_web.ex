@@ -40,6 +40,8 @@ defmodule ZetsTrackerWeb do
       import ZetsTrackerWeb.Router.Helpers
       import ZetsTrackerWeb.ErrorHelpers
       import ZetsTrackerWeb.Gettext
+
+      import ReactPhoenix.ClientSide
     end
   end
 

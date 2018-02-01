@@ -13,6 +13,7 @@
 // to also remove its path from "config.paths.watched".
 import "phoenix_html"
 import "react"
+import "react-phoenix"
 
 // Import local files
 //
@@ -20,3 +21,8 @@ import "react"
 // paths "./socket" or full ones "web/static/js/socket".
 
 import socket from "./socket"
+import Tracker from "./components/Tracker"
+
+window.Components = {
+  Tracker
+}

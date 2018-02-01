@@ -6,14 +6,5 @@
 </div>
 
 <br/>
-<div class="row">
-  <img src="/images/firerod.png" onclick="activate(this)" ></img>
-</div>
 
-<script>
-function activate(image) {
-  image.classList.add("active")
-}
-
-
-</script>
+<%= react_component("Components.Tracker") %>

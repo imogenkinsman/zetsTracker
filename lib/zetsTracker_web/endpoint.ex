@@ -1,7 +1,7 @@
 defmodule ZetsTrackerWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :zetsTracker
 
-  socket "/socket", ZetsTrackerWeb.UserSocket
+  socket "/socket", ZetsTrackerWeb.GameSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
