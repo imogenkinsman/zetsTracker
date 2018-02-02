@@ -8,7 +8,7 @@ This is currently pre-alpha, but once the featureset is complete, open beta will
 
 For running the tracker locally:
 
-  * Pull down the repo and install Elixir (the programming language).
+  * Pull down the repo and [install Elixir](https://elixir-lang.org/install.html).
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Install Node.js dependencies with `cd assets && npm install`
