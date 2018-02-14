@@ -1,6 +1,6 @@
 # ZetsTracker
 
-ZetsTracker is an item tracker for the [Zelda: Link to the Past Randomizer](https://vt.alttp.run/randomizer). Its main distinction from other trackers is that it has real-time collaborative updates, allowing streamers of the game to focus on playing and outsource the work to viewers who they trust.
+ZetsTracker is an item tracker for the [Zelda: Link to the Past Randomizer](http://vt.alttp.run/randomizer). Its main distinction from other trackers is that it has real-time collaborative updates, allowing streamers of the game to focus on playing and outsource the work to viewers who they trust.
 
 ## Contributing
 
