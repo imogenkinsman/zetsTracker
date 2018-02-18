@@ -1,0 +1,213 @@
+.bg-bow0 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-bottle4 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -94px -10px;
+}
+
+.bg-bow1 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -10px -94px;
+}
+
+
+x
+.bg-bow2 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -94px -94px;
+}
+
+.bg-bow3 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -178px -10px;
+}
+
+.bg-byrna {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -178px -94px;
+}
+
+.bg-cape {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -10px -178px;
+}
+
+.bg-ether {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -94px -178px;
+}
+
+.bg-firerod {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -178px -178px;
+}
+
+.bg-flippers {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -262px -10px;
+}
+
+.bg-flute {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -262px -94px;
+}
+
+.bg-glove1 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -262px -178px;
+}
+
+.bg-glove2 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -10px -262px;
+}
+
+.bg-hammer {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -94px -262px;
+}
+
+.bg-hookshot {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -178px -262px;
+}
+
+.bg-icerod {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -262px -262px;
+}
+
+.bg-lantern {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -346px -10px;
+}
+
+.bg-mirror {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -346px -94px;
+}
+
+.bg-moonpearl {
+    width: 48px; height: 48px;
+    background: url('css_sprites.png') -514px -430px;
+}
+
+.bg-mushroom {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -346px -178px;
+}
+
+.bg-net {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -346px -262px;
+}
+
+.bg-powder {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -10px -346px;
+}
+
+
+.bg-quake {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -94px -346px;
+}
+
+
+.bg-shield1 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -178px -346px;
+}
+
+.bg-shield2 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -262px -346px;
+}
+
+.bg-shield3 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -346px -346px;
+}
+
+.bg-shovel {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -430px -10px;
+}
+
+.bg-somaria {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -430px -94px;
+}
+
+.bg-sword1 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -430px -178px;
+}
+
+.bg-sword2 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -430px -262px;
+}
+
+.bg-sword3 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -430px -346px;
+}
+
+.bg-sword4 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -10px -430px;
+}
+
+.bg-bombos {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -94px -430px;
+}
+
+.bg-book {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -178px -430px;
+}
+
+.bg-boomerang1 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -262px -430px;
+}
+
+.bg-boomerang2 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -346px -430px;
+}
+
+.bg-boomerang3 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -430px -430px;
+}
+
+.bg-boots {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -514px -10px;
+}
+
+.bg-bottle0 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -514px -94px;
+}
+
+.bg-bottle1 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -514px -178px;
+}
+
+.bg-bottle2 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -514px -262px;
+}
+
+.bg-bottle3 {
+    width: 64px; height: 64px;
+    background: url('css_sprites.png') -514px -346px;
+}
