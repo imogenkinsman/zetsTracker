@@ -8,9 +8,10 @@ class Item extends React.Component {
 
   render() {
     const {name} = this.props
+    const bgName = `bg-${name}`
 
     return (
-      <img src={`/images/${name}.png`}></img>
+      <div className={bgName}></div>
     )
   }
 }

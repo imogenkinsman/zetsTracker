@@ -9,7 +9,7 @@ class Tracker extends React.Component {
   render() {
     return (
       <div className="row">
-        <Item name="firerod" clickHandler={this.clickHandler("firerod")}/>
+        <Item name="bombos" clickHandler={this.clickHandler("firerod")}/>
       </div>
     )
   }
