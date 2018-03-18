@@ -54,10 +54,13 @@ let socket = new Socket("/socket", {params: {token: token}})
 
 socket.connect()
 
+// get the current game ID from the URL
+const game_id = document.querySelector("meta[name=game_id]").content
+
 // Now that you are connected, you can join channels with a topic:
-let channel = socket.channel("topic:subtopic", {})
+let channel = socket.channel(`game:${game_id}`, {})
 channel.join()
-  .receive("ok", resp => { console.log("Joined successfully", resp) })
+  .receive("ok", resp => { console.log("Successfully joined channel ", game_id, resp) })
   .receive("error", resp => { console.log("Unable to join", resp) })
 
 export default socket

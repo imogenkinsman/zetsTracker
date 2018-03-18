@@ -1,4 +1,5 @@
 <%= tag :meta, name: "channel_token", content: @signed_token %>
+<%= tag :meta, name: "game_id", content: @id %>
 
 <div class="row">
   <span>Your edit url is:</span>

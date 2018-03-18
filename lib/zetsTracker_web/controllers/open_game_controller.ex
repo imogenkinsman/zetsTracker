@@ -32,7 +32,7 @@ defmodule ZetsTrackerWeb.OpenGameController do
     else
       Phoenix.Token.sign(ZetsTrackerWeb.Endpoint, salt, "unauth")
     end
-    render(conn, "show.html", open_game: open_game, signed_token: signed_token)
+    render(conn, "show.html", open_game: open_game, id: id, signed_token: signed_token)
   end
 
   def show(conn, %{"id" => id}) do
