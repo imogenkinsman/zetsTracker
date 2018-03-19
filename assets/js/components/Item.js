@@ -18,6 +18,7 @@ class Item extends React.Component {
 
 Item.propTypes = {
   name: PropTypes.string,
+  currentState: PropTypes.string,
   clickHandler: PropTypes.func
 }
 
