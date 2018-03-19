@@ -12,20 +12,17 @@ class Tracker extends React.Component {
   }
 
   render() {
-    // const items = [
-    //   {name: 'bombos', states: ["inactive", "active"]},
-    //   {name: 'shovel', states: ["inactive", "active"]},
-    //   {name: 'book', states: ["inactive", "active"]},
-    //   {name: 'boots', states: ["inactive", "active"]},
-    // ]
     const items = [
-      'bombos', 'shovel', 'book', 'boots'
+      {name: 'bombos', states: ["inactive", "active"]},
+      {name: 'shovel', states: ["inactive", "active"]},
+      {name: 'book', states: ["inactive", "active"]},
+      {name: 'boots', states: ["inactive", "active"]},
     ]
 
     return (
       <div className="row">
         <div className="col-sm">
-          { items.map((item) => <Item name={item} key={item}/>)
+          { items.map(({name}) => <Item name={name} key={name}/>)
           }
         </div>
       </div>
