@@ -7,8 +7,16 @@ class Tracker extends React.Component {
     this.state = {itemStates: {bombos: 0, shovel: 0, book: 0, boots: 0}}
   }
 
-  clickHandler(key) {
+  clickHandler(name) {
+    const {itemStates} = this.state
+    itemStates[name] = itemsStates[name] + 1
+    this.setState({itemStates: itemStates})
+  }
 
+  getCurrentState(name) {
+    const index = this.state.itemStates[name]
+    const item = items.filter((item) => item.name == name)
+    return item.states[index]
   }
 
   render() {
@@ -22,7 +30,14 @@ class Tracker extends React.Component {
     return (
       <div className="row">
         <div className="col-sm">
-          { items.map(({name}) => <Item name={name} key={name}/>)
+          { items.map(({name}) =>
+              <Item
+                name={name}
+                key={name}
+                clickHandler={this.clickHandler(name)}
+                currentState={getCurrentState(name)}
+              />
+            )
           }
         </div>
       </div>
