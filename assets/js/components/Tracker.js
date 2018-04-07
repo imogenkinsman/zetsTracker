@@ -1,6 +1,9 @@
 import React from 'react';
 import Item from './Item';
 
+import socket from '../socket';
+import {items} from '../constants';
+
 class Tracker extends React.Component {
   constructor(props) {
     super(props)
@@ -9,24 +12,18 @@ class Tracker extends React.Component {
 
   clickHandler(name) {
     const {itemStates} = this.state
-    itemStates[name] = itemsStates[name] + 1
+    itemStates[name] = itemStates[name] + 1
+    console.log(itemStates)
     this.setState({itemStates: itemStates})
   }
 
   getCurrentState(name) {
     const index = this.state.itemStates[name]
-    const item = items.filter((item) => item.name == name)
+    const item = items.filter((item) => item.name == name)[0]
     return item.states[index]
   }
 
   render() {
-    const items = [
-      {name: 'bombos', states: ["inactive", "active"]},
-      {name: 'shovel', states: ["inactive", "active"]},
-      {name: 'book', states: ["inactive", "active"]},
-      {name: 'boots', states: ["inactive", "active"]},
-    ]
-
     return (
       <div className="row">
         <div className="col-sm">
@@ -34,8 +31,8 @@ class Tracker extends React.Component {
               <Item
                 name={name}
                 key={name}
-                clickHandler={this.clickHandler(name)}
-                currentState={getCurrentState(name)}
+                clickHandler={() => {this.clickHandler(name)}}
+                currentState={this.getCurrentState(name)}
               />
             )
           }

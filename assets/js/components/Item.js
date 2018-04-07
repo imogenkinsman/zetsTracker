@@ -7,11 +7,14 @@ class Item extends React.Component {
   }
 
   render() {
-    const {name} = this.props
+    const {name, clickHandler} = this.props
     const bgName = `bg-${name}`
 
     return (
-      <div className={bgName}></div>
+      <div
+        onClick={clickHandler}
+        className={bgName}>
+      </div>
     )
   }
 }
