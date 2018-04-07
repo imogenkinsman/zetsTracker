@@ -7,7 +7,7 @@ import {items} from '../constants';
 class Tracker extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {itemStates: {bombos: 0, shovel: 0, book: 0, boots: 0}}
+    this.state = {itemStates: this.initialItemStates()}
   }
 
   clickHandler(name) {
@@ -18,9 +18,17 @@ class Tracker extends React.Component {
   }
 
   getCurrentState(name) {
+    const item = items.find((item) => item.name == name)
     const index = this.state.itemStates[name]
-    const item = items.filter((item) => item.name == name)[0]
     return item.states[index]
+  }
+
+  initialItemStates() {
+    const states = {}
+    for (var item of items) {
+      states[item.name] = 0
+    }
+    return states
   }
 
   render() {
